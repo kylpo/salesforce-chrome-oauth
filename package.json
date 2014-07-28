@@ -1,0 +1,8 @@
+{
+"name": "salesforce-chrome-oauth",
+"description": "Library to acquire oauth tokens for Salesforce.com's APIs.
+Makes use of Chrome's auth APIs.",
+"author": "Kyle Poole <2kylepoole@gmail.com> (http://kylpo.com)",
+"version": "0.1.0",
+"main": index.js
+}
