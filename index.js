@@ -65,13 +65,8 @@ module.exports = function(clientId, clientSecret, host) {
         }
 
         function handleProviderTokensResponse(values) {
-            if (values.hasOwnProperty('access_token') && values.hasOwnProperty('refresh_token')) {
-                var newConnection = {
-                    host: values.instance_url,
-                    access_token: values.access_token,
-                    refresh_token: values.refresh_token
-                };
-                callback(null, newConnection);
+            if (values != null) {
+                callback(null, values);
             } else {
                 callback(new Error('error in handleProviderTokensResponse.'));
             }
@@ -79,7 +74,7 @@ module.exports = function(clientId, clientSecret, host) {
     };
 
     module.refreshToken = function(connection, callback) {
-        var url = connection.host + '/services/oauth2/token?client_id=' + clientId +
+        var url = connection.instance_url + '/services/oauth2/token?client_id=' + clientId +
             '&client_secret=' + clientSecret +
             '&grant_type=refresh_token' +
             '&refresh_token=' + connection.refresh_token;
