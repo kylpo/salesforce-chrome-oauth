@@ -1,7 +1,11 @@
 {
-"name": "salesforce-chrome-oauth",
-"description": "[Unofficial] Library to acquire oauth tokens for Salesforce.com's APIs. Makes use of Chrome's auth APIs.",
-"author": "Kyle Poole <2kylepoole@gmail.com> (http://kylpo.com)",
-"version": "0.1.2",
-"main": "index.js"
+    "name": "salesforce-chrome-oauth",
+    "description": "[Unofficial] Library to acquire oauth tokens for Salesforce.com's APIs. Makes use of Chrome's auth APIs.",
+    "author": "Kyle Poole <2kylepoole@gmail.com> (http://kylpo.com)",
+    "version": "0.1.3",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kylpo/salesforce-chrome-oauth.git"
+    }
 }
